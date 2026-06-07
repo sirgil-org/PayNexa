@@ -1,6 +1,39 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: corporate --default, business --prefersdark;
+  themes: payee --default;
+}
+@plugin "daisyui/theme" {
+  name: "payee";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #ffffff;
+  --color-base-300: #e7eadf;
+  --color-base-content: #123f45;
+  --color-primary: #06d6a0;
+  --color-primary-content: #06241f;
+  --color-secondary: #1b9aaa;
+  --color-secondary-content: #f8ffe5;
+  --color-accent: #ffc43d;
+  --color-accent-content: #3b2a00;
+  --color-neutral: #123f45;
+  --color-neutral-content: #f8ffe5;
+  --color-info: #1b9aaa;
+  --color-info-content: #f8ffe5;
+  --color-success: #06d6a0;
+  --color-success-content: #06241f;
+  --color-warning: #ffc43d;
+  --color-warning-content: #3b2a00;
+  --color-error: #ef476f;
+  --color-error-content: #f8ffe5;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
 }
 
 @layer base {
